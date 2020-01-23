@@ -7,4 +7,4 @@
 ```
 
 
-[ ] add basic style guidelines
+- [ ] add basic style guidelines
