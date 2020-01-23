@@ -1,3 +1,2 @@
 # NR Styling Guidelines
 
-***
