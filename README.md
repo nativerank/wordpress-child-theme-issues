@@ -417,6 +417,10 @@ This helper also allows for an `else` block, like the `if` and `_if` helpers, wh
 {{/each}}
 ```
 
+#### `{{.}}`
+
+If you loop over an object, you will use that object's `keys` to display data within the loop, but if you loop over an array without keys, you may need to reference the current item, which can be done with the `{{.}}` variable.
+
 #### `{{@key}}`
 
 `@key` will reference the key or index of the current iteration of your `each` loop. 
@@ -462,6 +466,10 @@ This helper accepts the operators in the table below. Each operator returns true
    <p>{{post_title}}</p>
 {{/filter}}
 ```
+
+#### `{{.}}`
+
+If you `filter` an object, you will use that object's `keys` to display data within the loop, but if you `filter` an array without keys, you may need to reference the current item, which can be done with the `{{.}}` variable.
 
 #### `{{@key}}`
 
