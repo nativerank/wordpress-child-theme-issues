@@ -8,6 +8,16 @@ These `.hbs` files have the same syntax as a normal `.html` file, but they also 
   
 ## Built-In Helpers 
 
+Image Helpers - 
+
+There are three methods to use the image helpers, each one for a different purpose: 
+
+1. {{image}} 
+
+2. {{imageSrc}} 
+
+3. {{getImageFromPageId}} 
+
 ### `{{image}}`
 
 Acts like a function that accepts two attributes:  
