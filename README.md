@@ -16,16 +16,17 @@ There are three methods to use the image helpers, each one for a different purpo
 
 2. {{imageSrc}} 
 
-3. {{getImageFromPageId}} 
+3. `{{getImageFromPageId}}` 
 
 ### `{{image}}`
+  
+This helper returns the html image tag of the value provided in the `id` attribute.  
 
-Acts like a function that accepts two attributes:  
+Acts like a function that accepts three attributes:  
   
 `id`  
-`uk-cover`  
-  
-This helper returns the html image tag of the image provided in the `id` attribute.  
+`size`
+`uk-cover`
 
 `uk-cover` adds **[UIkit 3's uk-cover component](https://getuikit.com/docs/cover)** to the image tag.  
   
@@ -43,8 +44,12 @@ _Output_
 **-----**
 
 ### `{{imageSrc}}`
+Returns the `url/src` of the image provided in the `id` attribute.
 
-Returns the url/src of the image provided in the `id` attribute.
+Acts like a function that accepts two attributes:  
+  
+`id`  
+`size`
 
 #### Usage
 _Input_
@@ -58,11 +63,19 @@ _Output_
 **-----**
 ### `{{getImageFromPageId}}`
 
-Returns the image tag of the featured image of the post [ID] provided in the id attribute. Accepts two parameters:
+Returns the featured image tag of the post [ID] value provided in the id attribute. 
+
+Acts like a function that accepts three attributes:  
 
 Post/Page `id`
-
+`size`
 `uk-cover`
+
+**-----**
+### `{{image id=headerImage}}`
+
+Returns the featured image ID of the current page. 
+Can be used with the [`{{image}}`](#image) and [`{{imageSrc}}`](#imagesrc) helpers.
 
 **-----**
 ### `{{getPermalink}}`
@@ -73,14 +86,6 @@ Only accepts page id without attributes  `{{getPermalink PAGE_ID}}`
 
 #### Usage
 `<a href="{{getPermalink 125}}">Fire Damage Services</a>`
-
-**-----**
-### `{{image id=headerImage}}`
-
-Returns the featured image ID of the current page. 
-Can be used with the [`{{image}}`](#image) and [`{{imageSrc}}`](#imagesrc) helpers.
-
-
 
 **-----**
 ### `{{label}}`
