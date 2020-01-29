@@ -46,9 +46,9 @@ _Output_
 `<div data-src="/wp-content/image-large.jpeg" uk-img></div>`
 
 **-----**
-### `{{image id=headerImage}}`
+### `headerImage`
 
-Returns the featured image ID of the current page. 
+Variable, returns the featured image ID of the current page. 
 Can be used with the [`{{image}}`](#image) and [`{{imageSrc}}`](#imagesrc) helpers.
 
 **-----**
