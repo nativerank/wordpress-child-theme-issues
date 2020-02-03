@@ -46,6 +46,12 @@ _Output_
 `<div data-src="/wp-content/image-large.jpeg" uk-img></div>`
 
 **-----**
+### `headerImage`
+
+Variable, returns the featured image ID of the current page. 
+Can be used with the [`{{image}}`](#image) and [`{{imageSrc}}`](#imagesrc) helpers.
+
+**-----**
 ### `{{getImageFromPageId}}`
 
 Returns the image tag of the featured image of the post [ID] provided in the id attribute. Accepts two parameters:
@@ -63,14 +69,6 @@ Only accepts page id without attributes  `{{getPermalink PAGE_ID}}`
 
 #### Usage
 `<a href="{{getPermalink 125}}">Fire Damage Services</a>`
-
-**-----**
-### `{{image id=headerImage}}`
-
-Returns the featured image ID of the current page. 
-Can be used with the [`{{image}}`](#image) and [`{{imageSrc}}`](#imagesrc) helpers.
-
-
 
 **-----**
 ### `{{label}}`
