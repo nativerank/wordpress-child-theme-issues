@@ -296,7 +296,7 @@ Returns the link to the client's primary Google My Business listing location, sh
 
 Most Native Rank sites will make use of service areas, which will be another "site" within the site that is more or less the same as the main site, but the SEO strategy will be "optimized" for another city or location. These areas will have special templates that follow the naming convention of adding `city` or `location` and a dash '-' as a prefix to the name of the templates for those page types, e.g. `location-frontpage.hbs` will be very similar to `frontpage.hbs` but with a few minor differences.
 
-The `{{city}}` helper will return the name of the current city within your templates, this is one way that your templates will differ for service area pages.
+The `{{city}}` helper will return an array with the keys `title` and `id`, which both correspond to your city's frontpage. This is one way that your templates can differ for service area pages.
 
 ### Secondary Navigation
 
